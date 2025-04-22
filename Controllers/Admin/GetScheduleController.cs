@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace TeacherMgmt.Controllers
+namespace TeacherMgmt.Controllers.Admin
 {
     public class GetScheduleController : Controller
     {

@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace TeacherMgmt.Controllers.Teacher
+namespace TeacherMgmt.Controllers.Admin
 {
-    public class GetAttendanceController : Controller
+    public class ManualSchedulingController : Controller
     {
         public IActionResult Index()
         {
