@@ -9,11 +9,11 @@ namespace TeacherMgmt.Models
 
         [Required]
         [MaxLength(100)]
-        public string T_Name { get; set; }
+        public string Name { get; set; }
 
         [Required]
         [MaxLength(150)]
-        public string T_Subject { get; set; }
+        public string Subject { get; set; }
 
         [Required]
         [EmailAddress]
