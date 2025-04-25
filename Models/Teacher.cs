@@ -39,7 +39,6 @@ namespace TeacherMgmt.Models
         [MaxLength(100)]
         public string PreferredContact { get; set; }  
 
-        [Range(1, 5)]
-        public int Priority { get; set; } = 3;  
+       
     }
 }
