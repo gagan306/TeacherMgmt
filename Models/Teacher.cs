@@ -1,13 +1,45 @@
-﻿namespace TeacherMgmt.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace TeacherMgmt.Models
 {
     public class Teacher
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Subject { get; set; }
+        [Key]
+        public Guid Id { get; set; } = Guid.NewGuid();
+
+        [Required]
+        [MaxLength(100)]
+        public string T_Name { get; set; }
+
+        [Required]
+        [MaxLength(150)]
+        public string T_Subject { get; set; }
+
+        [Required]
+        [EmailAddress]
+        [MaxLength(150)]
         public string Email { get; set; }
+
+        [Required]
+        [Phone]
+        [MaxLength(10)]
         public string Phone { get; set; }
+
+        [Required]
         public TimeOnly TimeFrom { get; set; }
+
+        [Required]
         public TimeOnly TimeTo { get; set; }
+
+        [Required]
+        [MaxLength(500)]
+        public string Message { get; set; }  
+
+       
+        [MaxLength(100)]
+        public string PreferredContact { get; set; }  
+
+        [Range(1, 5)]
+        public int Priority { get; set; } = 3;  
     }
 }
