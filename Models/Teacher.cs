@@ -37,8 +37,12 @@ namespace TeacherMgmt.Models
 
        
         [MaxLength(100)]
-        public string PreferredContact { get; set; }  
+        public string PreferredContact { get; set; }
 
-       
+        [Required]
+        public string Department { get; set; }
+        [Required]
+        public string Faculty { get; set; }
+
     }
 }
