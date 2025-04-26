@@ -5,7 +5,7 @@ namespace TeacherMgmt.Models
     public class Teacher
     {
         [Key]
-        public Guid Id { get; set; } = Guid.NewGuid();
+        public Guid TeacherId { get; set; } = Guid.NewGuid();
 
         [Required]
         [MaxLength(100)]
@@ -13,7 +13,10 @@ namespace TeacherMgmt.Models
 
         [Required]
         [MaxLength(150)]
-        public string Subject { get; set; }
+        public string Subject { get; set; } 
+        [Required]
+        [MaxLength(150)]
+        public string SubField{ get; set; }
 
         [Required]
         [EmailAddress]

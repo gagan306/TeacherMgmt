@@ -5,7 +5,7 @@ namespace TeacherMgmt.Models
     public class ClassInfo
     {
         [Key]
-        public int Id { get; set; }
+        public int ClassId { get; set; }
         [Required]
         [MaxLength(100)]
         public string ClassName { get; set; }

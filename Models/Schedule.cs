@@ -5,7 +5,9 @@ namespace TeacherMgmt.Models
     public class Schedule
     {
         [Key]
-        public int Id { get; set; }
+        public int ScheduleId { get; set; }
+        [Required]
+        public Guid TeacherId { get; set; }
         [Required]
         [MaxLength(100)]
         public string TeacherName { get; set; }
@@ -22,5 +24,7 @@ namespace TeacherMgmt.Models
         public string Sift { get; set; }
         [Required]
         public string Faculty { get; set; }
+        [Required]
+        public DateTime Date { get; set; }
     }
 }
